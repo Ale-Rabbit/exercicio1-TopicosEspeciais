@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="alexandra.example.com.exercicio1.PrimeiraTela">
+
+    <RadioGroup
+    android:id="@+id/rg_sexo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:layout_above="@+id/cb_filme"
+        android:layout_alignStart="@+id/btCadastrar">
+
+    <RadioButton
+        android:id="@+id/rb_masculino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Masculino" />
+
+    <RadioButton
+        android:id="@+id/rb_feminino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/et_nome"
+        android:layout_toEndOf="@+id/cb_filme"
+        android:layout_toRightOf="@+id/cb_filme"
+        android:layout_weight="1"
+        android:text="Feminino" />
+
+</RadioGroup>
+
+<CheckBox
+    android:id="@+id/cb_musica"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Musica"
+    android:layout_below="@+id/cb_filme"
+    android:layout_alignLeft="@+id/cb_filme"
+    android:layout_alignStart="@+id/cb_filme" />
+
+<CheckBox
+    android:id="@+id/cb_filme"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Filme"
+    android:layout_alignTop="@+id/textView2"
+    android:layout_marginTop="19dp"
+    android:layout_toStartOf="@+id/et_nome" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Interesses"
+    android:layout_centerVertical="true"
+    android:layout_alignEnd="@+id/cb_filme" />
+
+<Button
+    android:id="@+id/btCadastrar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Cadastrar"
+    android:layout_alignBaseline="@+id/btEnviar"
+    android:layout_alignBottom="@+id/btEnviar"
+    android:layout_alignParentStart="true"
+    android:layout_marginStart="43dp" />
+
+<Button
+    android:id="@+id/btEnviar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Enviar"
+    android:layout_marginBottom="11dp"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="33dp"
+    android:layout_alignEnd="@+id/et_nome" />
+
+    <EditText
+        android:id="@+id/et_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+</android.widget.RelativeLayout>
+
